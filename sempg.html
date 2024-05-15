@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="mycss/nav2.css">
+    <link rel="stylesheet" href="MyCss/footer1.css">
+    <link rel="stylesheet" href="mycss/sempg.css">
+    <title>Sempage</title>
+</head>
+
+<body>
+
+    <section class="sidebar">
+
+        <div class="nav-header mobile">
+            <p class="logo">Material Hub</p>
+            <i class="bx bx-menu btn-menu"></i>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <i class="bx bx-search search-btn"></i>
+                <input type="text" placeholder="search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#hom">
+                    <i class="bx bx-home-alt-2"></i>
+                    <span class="title">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#branch">
+                    <i class="bx bx-book"></i>
+                    <span class="title">Materials</span>
+                </a>
+                <span class="tooltip">Materials</span>
+            </li>
+            <li>
+                <a href="#branch">
+                    <i class="bx bx-receipt"></i>
+                    <span class="title">Branches</span>
+                </a>
+                <span class="tooltip">Branches</span>
+            </li>
+            <li>
+                <a href="#footer">
+                    <i class="bx bx-wallet-alt"></i>
+                    <span class="title">Suggestions</span>
+                </a>
+                <span class="tooltip">Suggestions</span>
+            </li>
+            <li>
+                <a href="#footer">
+                    <i class="bx bxl-twitch"></i>
+                    <span class="title">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact Us</span>
+            </li>
+            <li>
+                <a href="#hom">
+                    <i class="bx bx-cog"></i>
+                    <span class="title">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+        </ul>
+    </section>
+
+    <nav>
+        <div class="navBox">
+            <div class="logo">
+                <h3><a href="#">Material Hub <i class="bx bx-book-open"></i></a></h3>
+            </div>
+            <div class="options">
+                <div class="navbtn">
+                    <a href="#" class="a matNav">Materials <i class="fa fa-angle-down"></i></a>
+                    <div class="matcard">
+                        <ul>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Schools</a></li>
+                            <li><a href="#">PYQ's</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbtn">
+                    <a href="#" class="a semNav">Subjects <i class="fa fa-angle-down"></i></a>
+                    <div class="subcard">
+                        <div class="cd">
+                            <ul>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbtn"><a href="#" class="a tbNav">Textbooks <i class="fa fa-angle-down"></i></a></div>
+                <div class="navbtn"><a href="#" class="a ccNav">Course Code <i class="fa fa-angle-down"></i></a></div>
+            </div>
+            <div class="navUtils">
+                <div class="menu"><a href="#"><i class="fa fa-upload"></i></a></div>
+                <div class="menu"><a href="#"><i class="fa fa-book"></i></a></div>
+                <div class="menu"><a href="#"><i class="fa fa-info"></i></a></div>
+                <div class="login"><a href="#">Login</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hm">
+        <div class="main">
+            <div class="Hbg">
+                <img src="images/My project.png" alt="">
+            </div>
+            <div class="headContent">
+                <h1>Find Your Materials</h1>
+                <h3>Let's study together with <span>8000+</span> Notes and materials</h3>
+                <br>
+                <form action="" class="searchform">
+                    <input type="text" placeholder="Search what you want, e.g.CSE" id="search" class="search"
+                        autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_resutls(this)">
+                    <button class="searchbtn" type="button" id="searchmore" onclick="click_learnmore()">
+                        <i id="searchmoreicon" class="fa fa-search"></i>
+                    </button>
+                </form>
+                <h2 style="margin: 3%;"><a href="#">Want some Previous year papers ??</a></a></h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h1>Courses</h1>
+        <div class="arrows">
+            <div class="leftarr">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="rightarr">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="courseContainer c1 center">
+            <div class="courseCard" style="background: #fad5a1;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #FFC0C7;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #c2fad5;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #96D4D4;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #FFF4A3;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #F3ECEA;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+        </div>
+        <div class="courseContainer c2 right">
+            <div class="courseCard" style="background: #c2fad5;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #FFF4A3;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #fad5a1;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #F3ECEA;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #FFC0C7;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #96D4D4;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+        </div>
+        <div class="courseContainer c3 right">
+            <div class="courseCard" style="background: #F3ECEA;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #fad5a1;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #c2fad5;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #FFF4A3;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #96D4D4;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+            <div class="courseCard" style="background: #c2fad5;">
+                <h1>CSE</h1>
+                <h2>All revised notes</h2>
+                <div class="open">Open</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subjects">
+        <div class="subHead">
+            <div class="pcard SOC active">SOC</div>
+            <div class="pcard VKJ">VKJ</div>
+            <div class="pcard VV">VV</div>
+            <div class="pcard NMV">NMV</div>
+            <div class="pcard JVC">JVC</div>
+        </div>
+        <div class="subOut SocP active">
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>CSE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+        </div>
+        <div class="subOut VkjP">
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Mech</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+        </div>
+        <div class="subOut VVP">
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>ECE</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+        </div>
+        <div class="subOut NMVP">
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Civil</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+        </div>
+        <div class="subOut JvcP">
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <h3><i class="fa-brands fa-stubber"></i></h3>
+                </div>
+                <div class="subDetls">
+                    <h1>Bio</h1>
+                    <h3>Computer Science core</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="previous">
+        <h1>Find Branch-wise's</h1>
+        <div class="pycontainer">
+            <div class="pycard">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard inactive">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard inactive">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard inactive">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <div class="pycard inactive">
+                <h1>CSE</h1>
+                <h3>All sem-wise's</h3>
+                <div class="btn">View <i class="fa fa-arrow-right"></i></div>
+            </div>
+            <!-- <div class="vm">View more <i class="fa fa-arrow-down"></i></div> -->
+        </div>
+    </section>
+
+    <section class="pg3" id="pg3">
+        <h2>Make your Learning easier</h2>
+        <div class="page3">
+            <div class="feature">
+                <img src="images/feature.png" alt="">
+                <div class="icn"></div>
+                <h1>Complete & clear</h1>
+                <p>Top preferd notes with good examples and exercises.</p>
+            </div>
+            <div class="feature">
+                <img src="images/working.png" alt="">
+                <h1>Collected Effectively</h1>
+                <p>Cared and collected as per the previous usage and recomendations.</p>
+            </div>
+            <div class="feature">
+                <img src="images/smartphone.png" alt="">
+                <h1>Learning Center</h1>
+                <p>Quickly get solutions tailored to your personal challenges from our team.</p>
+            </div>
+            <div class="feature close">
+                <img src="images/multitasking.png" alt="">
+                <h1>Faculty suggested</h1>
+                <p>Verified and recommended notes by the college faculty.</p>
+            </div>
+            <div class="feature close">
+                <img src="images/team-work.png" alt="">
+                <h1>Easy Search</h1>
+                <p>Enables you to access and find the required notes a soon as possible.</p>
+            </div>
+            <div class="feature close">
+                <img src="images/idea.png" alt="">
+                <h1>Exclusives Notes</h1>
+                <p>Wide range of notes covering all the importand and essential topics.</p>
+            </div>
+            <div class="viewm">View more benefits</div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="aboutpg">
+            <div class="img1"><img src="images/Notebook-pana.png" alt=""></div>
+            <div class="contentBx">
+                <h1>About Us</h1>
+                <p>Explanation About ourselves. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eveniet
+                    fugit, omnis facere quidem doloribus culpa atque dolores harum vel.</p>
+            </div>
+            <div class="img"><img src="images/Knowledge-pana.png" alt=""></div>
+        </div>
+        <h1 class="teamHead">Our Team</h1>
+        <div class="team">
+            <div class="memberCard">
+                <div class="dp">
+                    <img src="images/pic-4.png" alt="">
+                </div>
+                <div class="details">
+                    <h1>Name</h1>
+                    <p>Post or about</p>
+                </div>
+            </div>
+            <div class="memberCard">
+                <div class="dp">
+                    <img src="images/pic-1.png" alt="">
+                </div>
+                <div class="details">
+                    <h1>Name</h1>
+                    <p>Post or about</p>
+                </div>
+            </div>
+            <div class="memberCard">
+                <div class="dp">
+                    <img src="images/pic-2.png" alt="">
+                </div>
+                <div class="details">
+                    <h1>Name</h1>
+                    <p>Post or about</p>
+                </div>
+            </div>
+            <div class="memberCard">
+                <div class="dp">
+                    <img src="images/pic-3.png" alt="">
+                </div>
+                <div class="details">
+                    <h1>Name</h1>
+                    <p>Post or about</p>
+                </div>
+            </div>
+            <div class="memberCard">
+                <div class="dp">
+                    <img src="images/pic-4.png" alt="">
+                </div>
+                <div class="details">
+                    <h1>Name</h1>
+                    <p>Post or about</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Material Hub <i class="bx bx-book-open"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, consequatur.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 98xxx xxxx0</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 87xxx xxxx4</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>noting@gmail.com </a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> hyderabad, Telengana, India - 124002
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Materials </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Branches </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Suggestions </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Contact Us </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Settings </a>
+            </div>
+
+
+        </div>
+        <div class="credit">created by <span>Someone </span> | all rights reserved</div>
+    </section>
+
+    <script src="myjs/sempg.js"></script>
+    <script src="myjs/nav2.js"></script>
+</body>
+
+</html>
